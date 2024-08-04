@@ -1,0 +1,32 @@
+$color-header: #ff760c;
+$color-header-transparent: rgb($color-header, 0.5);
+$color-title: white;
+$color-section: rgb(0, 82, 182);
+
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: $color-header-transparent;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: $color-header;
+    h1 {
+      margin: 0px;
+      color: $color-title;
+    }
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-title;
+    background-color: $color-section;
+    height: 300px;
+    p {
+      margin: 0px;
+    }
+  }
+}
