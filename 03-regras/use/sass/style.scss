@@ -1,0 +1,13 @@
+@use "theme" as t1; // Para carregar folhas de estilo e podemos dar apelido a ele par afacilitar
+
+body {
+  background-color: t1.$bg-color;
+}
+
+#chat {
+  li {
+    .message {
+      @include t1.arredondado;
+    }
+  }
+}
