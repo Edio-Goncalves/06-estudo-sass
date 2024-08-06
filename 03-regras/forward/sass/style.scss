@@ -1,0 +1,124 @@
+/* USO DE VARIAVEIS POR MODULO */
+// Sempre que usar uma variavel do modulo deve-se referenciar ela antes "theme.$border-radius;"
+
+@use "boot" as bt;
+
+/* USO DIRETO DE VARIAVEIS */
+
+#variaveis {
+  margin: 0;
+  height: 150px;
+  font-family: sans-serif;
+  background-color: bt.$color-header-transparent;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: bt.$color-header;
+
+    h1 {
+      margin: 0;
+      color: bt.$color-title;
+    }
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: bt.$color-title;
+    background-color: bt.$color-section;
+    height: 70px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+#vr-use {
+  box-sizing: border-box;
+  background-color: bt.$bg-color;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+
+  &:hover {
+    color: bt.$hiperlink;
+  }
+}
+
+.button {
+  background-color: bt.$primari-color;
+  color: bt.$primari-text-color;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: bt.$border-radius;
+  &:hover {
+    background-color: rgba(bt.$primari-text-color, 0.8);
+  }
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+main {
+  margin: 20px;
+  padding-right: 320px;
+  background-image: url(https://picsum.photos/id/237/300/400);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  min-height: 400px;
+  h1 {
+    font-weight: bold;
+    font-size: 48px;
+    // line-height: 1;
+    span {
+      color: bt.$primari-color;
+    }
+    small {
+      display: block;
+      font-weight: 100;
+      font-size: 24px;
+    }
+  }
+  p {
+    margin: 30px 0px;
+  }
+}
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bt.$footer;
+}
