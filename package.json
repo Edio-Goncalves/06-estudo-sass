@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch --style compressed 03-regras/mixin-e-include/sass:03-regras/mixin-e-include/css",
+    "sass": "sass --watch 03-regras/extend/sass:03-regras/extend/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+.error,
+.error--serious {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  background-color: aqua;
+}
+.error--serious {
+  border: 2px solid red;
+}
+.error,
+.error--serious {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  background-color: aqua;
+}
+.error--serious {
+  border: 2px solid red;
+} /*# sourceMappingURL=style.css.map */
