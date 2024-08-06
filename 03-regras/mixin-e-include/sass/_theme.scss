@@ -1,0 +1,97 @@
+$bg-color: rgb(255, 255, 255) !default;
+$primari-color: red !default;
+$primari-text-color: #fff !default;
+$border-radius: 0 !default;
+$hiperlink: red;
+$footer: orange;
+
+@mixin display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+#vr-use {
+  box-sizing: border-box;
+  background-color: $bg-color;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+
+  &:hover {
+    color: $hiperlink;
+  }
+}
+
+.button {
+  background-color: $primari-color;
+  color: $primari-text-color;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: $border-radius;
+  &:hover {
+    background-color: rgba($primari-text-color, 0.8);
+  }
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+main {
+  margin: 20px;
+  padding-right: 320px;
+  background-image: url(https://picsum.photos/id/237/300/400);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  min-height: 400px;
+  h1 {
+    font-weight: bold;
+    font-size: 48px;
+    // line-height: 1;
+    span {
+      color: $primari-color;
+    }
+    small {
+      display: block;
+      font-weight: 100;
+      font-size: 24px;
+    }
+  }
+  p {
+    margin: 30px 0px;
+  }
+}
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $footer;
+}

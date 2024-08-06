@@ -1,0 +1,47 @@
+/* USO DE VARIAVEIS POR MODULO */
+// Sempre que usar uma variavel do modulo deve-se referenciar ela antes "theme.$border-radius;"
+@use "theme" with (
+  $bg-color: rgb(210, 210, 210),
+  $border-radius: 10px
+);
+
+/* USO DIRETO DE VARIAVEIS */
+$color-header: #ff760c;
+$color-header-transparent: rgba($color-header, 0.5);
+$color-title: white;
+$color-section: rgb(0, 82, 182);
+
+#variaveis {
+  margin: 0;
+  height: 150px;
+  font-family: sans-serif;
+  background-color: $color-header-transparent;
+
+  header {
+    @include theme.display-flex;
+    height: 50px;
+    background-color: $color-header;
+
+    h1 {
+      margin: 0;
+      color: $color-title;
+    }
+  }
+
+  section {
+    @include theme.display-flex;
+    color: $color-title;
+    background-color: $color-section;
+    height: 70px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+/* @USE - uso de variaveis por modulo e sobscrição */
+#vr-use {
+  background-color: theme.$bg-color;
+  border-radius: theme.$border-radius;
+}
