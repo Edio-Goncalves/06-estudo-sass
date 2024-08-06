@@ -1,4 +1,4 @@
-06-estudo-sass
+# 06-estudo-sass
 
 Este repositório contém todos os recursos, exemplos e notas que compilei enquanto aprendia SASS Meu objetivo é fornecer uma referência útil e prática a partir do que aprendi e documentar meu próprio progresso.
 
