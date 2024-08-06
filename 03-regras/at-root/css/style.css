@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.wrapper .field {
+  background-color: antiquewhite;
+}
+.wrapper input.field {
+  padding: 10px;
+  border: 2px solid red;
+  margin: 5px;
+}
+
+.wrapper select.field {
+  padding: 10px;
+  border: 2px solid red;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
