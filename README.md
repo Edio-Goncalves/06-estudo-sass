@@ -14,6 +14,22 @@ Este repositório contém todos os recursos, exemplos e notas que compilei enqua
 
 #
 
+- Comandos básicos  
+  `sass --version` Versão // para saber a versão  
+  `sass --help` // para ver os comandos  
+  `sass --watch` // para observar o arquivo  
+  `sass style.scss:style.css` // para compilar o arquivo  
+  `--style=compressed` // para entregar o arquivo comprimido
+
+- Passo a passo simplificado para copilação em tempo real  
+  `npm install sass -g` Instalação  
+  `sass --version` Verificação da versão  
+  `npm init -y` Criação do package.json  
+  `"sass": "sass --watch --style=compressed style/scss:style/css/"` Adição no "script" do package.json  
+  `npm run sass` Para iniciar o comando descrito acima
+
+#
+
 ### NESTING
 
 Nesting no Sass permite aninhar seletores CSS de maneira hierárquica, imitando a estrutura HTML. Isso facilita a manutenção de estilos relacionados.
